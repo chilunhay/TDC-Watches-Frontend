@@ -55,7 +55,7 @@ const Payment = ({ history }) => {
         },
       };
       const { data } = await axios.post(
-        "/api/v2/payment/process",
+        "https://watches-api-new.onrender.com/api/v2/payment/process",
         paymentData,
         config
       );

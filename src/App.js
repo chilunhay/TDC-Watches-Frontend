@@ -52,7 +52,7 @@ function App() {
   const [stripeApiKey, setStripeApiKey] = useState("");
 
   async function getStripeApiKey() {
-    const { data } = await axios.get("/api/v2/stripeapikey");
+    const { data } = await axios.get("https://watches-api-new.onrender.com/api/v2/stripeapikey");
 
     setStripeApiKey(data.stripeApiKey);
   }
